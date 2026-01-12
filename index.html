@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheer" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "index.css">
+    <link rel = "stylesheet" href = "navbar.css">
+    <title>Home - PT. Multikreasi Prima Energi</title>
+</head>
+<body>
+    <body>
+    <header>
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="logo" class="logo-perusahaan">
+                </div>
+                <div class="responsive-bar">
+                    <div class="hamburger-bar">
+                        <img src="hamburger-bar.svg" class="imgburger">
+                    </div>
+                    <div class="resp-list">
+                        <a href="index.html">Home</a>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="csr.html">CSR</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="orca.html">Products</a>
+                        <a href="document.html">Governance Document</a>
+                        <a href="contacts.html">Contact</a>
+                    </div>
+                </div>
+                <div class="nav-li">
+                    <li class="blue"><a href="index.html">Home</a></li>
+                    <select class="dropdown" onchange="location = this.value;">
+                        <option value=""hidden selected>About Us</option>
+                        <option value="aboutus.html">About Us</option>
+                        <option value="csr.html">CSR</option>
+                    </select>
+                    <select class="dropdown" onchange="location = this.value;">
+                        <option value=""hidden selected>Projects & Products</option>
+                        <option value="projects.html">Projects</option>
+                        <option value="orca.html">Products</option>
+                    </select>
+                    <li class="red"><a href="document.html">Governance Document</a></li>
+                    <li class="yellow"><a href="contacts.html">Contact</a></li>
+                </div>
+            </nav>
+    </header>
+        <main>
+            <div class="start">
+                <img src="homebg.png" alt="home">
+                <div class="start-text-box">
+                    <p>Spesialisasi dalam Konstruksi Sipil, Mekanikal, Elektrikal, Perpipaan, Fabrikasi, dan EPCI untuk Minyak & Gas</p>
+                </div>
+                <div class="start-button">
+                    <a href="aboutus.html">Selengkapnya</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="page1">
+                    <div class="text-box">
+                        <p>PT. Multikreasi Prima Energi (MPE) adalah perusahaan yang bergerak dalam bidang Civil Construction, Mechanical, Electrical, Plumbing, Fabrication, serta EPCI for Oil & Gas Plant .</p>
+                    </div>
+                    <img src="page1subject.png">
+                </div>
+                <div class="page2">
+                    <img src="home2.png">
+                    <div class="text-box">
+                        <h1>VISI</h1>
+                        <p>Menjadi Perusahaan Konstruksi dan Rekayasa Teknik Terkemuka dan Tepercaya yang menawarkan produk-produk berkualitas tinggi dan menciptakan nilai optimal bagi klien, karyawan & pemegang saham, dan publik pada umumnya.</p>
+                    </div>
+                </div>
+                <div class="page3">
+                    <div class="text-box">
+                        <h1>MISI</h1>
+                        <p>Mendukung pembangunan bangsa Indonesia melalui pengembangan proyek berskala besar maupunkecil, yang memenuhi spesifikasi klien melalui akurasi dalam kualitas, waktu penyelesaian, dan biaya, serta dengan dukungan dari Sumber Daya Manusia yang dapat diandalkan & teknologi yang efisien.</p>
+                    </div>
+                    <img src="home3.png">
+                </div>
+                <div class="cta">
+                    <h1>Ingin tahu lebih banyak tentang kami?</h1>
+                    <a href="aboutus.html">Selengkapnya</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <script>
+            let subMenu = document.querySelector(".resp-list");
+
+            window.addEventListener("click", (e) => {
+                if(e.target.closest(".imgburger")) {
+                    subMenu.style.display = "flex";
+                } else {
+                subMenu.style.display = "none";
+                }
+            });
+        </script>
+    </body>
+</html>
